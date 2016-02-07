@@ -1,0 +1,61 @@
+
+<style type="text/css">
+	
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+</style>
+<a href="#openModal">Open Modal</a>
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>Credits</h2>
+		Website developed by <a href="http://anivarth.tk" target="_blank">Anivarth Peesapati</a><br />
+		Website created using <a href="http://python.org" target="_blank">Python</a><br />
+		Framework used <a href="http://bottlepy.org/docs/dev/index.html" target="_blank">Bottle Framework</a><br />
+		Hosted on <a href="http://pythonanywhere.com" target="_blank">Python Anywhere</a><br />
+		Python modules used: 
+		<ul>
+			<li>Requests python - <a href="http://docs.python-requests.org/en/master/" target="_blank">Requests - HTTP for Humans</a></li>
+			<li>Time access and conversions - <a href="https://docs.python.org/2/library/time.html" target="_blank">time</a></li>
+			<li>System specific parameters and functions <a href="https://docs.python.org/2/library/sys.html" target="_blank">sys</a></li>
+			<li>IP info using <a href="https://help.pythonanywhere.com/pages/WebAppClientIPAddresses/" target="_blank">request - Bottle</a></li>
+			<li>ip processing module <a href="https://github.com/mossberg/pyipinfodb" target="_blank">Pyipinfodb</a></li>
+		</ul>
+		ip info processed using <a href="http://www.ipinfodb.com/" target="_blank">IPINFODB</a><br />
+		Weather data available from <a href="http://openweathermap.org" target="_blank">Open Weather</a><br />
+		Front end designed by <a href="http://w3layouts.com" target="_blank">W3Layouts</a><br />
+		Modal Created using <a href="http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/" target="_blank">Web Designer depot</a>
+	</div>
+</div>
+
